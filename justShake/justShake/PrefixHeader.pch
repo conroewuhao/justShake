@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  justShake
+//
+//  Created by wuhao on 16/1/5.
+//  Copyright © 2016年 houbu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIColor+HexColor.h"
+#define rgba(a,b,c,d) [UIColor colorWithRed:a/255.f green:b/255.f blue:c/255.f alpha:d]
+
+
+
+
