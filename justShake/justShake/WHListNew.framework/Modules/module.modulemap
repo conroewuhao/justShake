@@ -1,0 +1,6 @@
+framework module WHListNew {
+  umbrella header "WHListNew.h"
+
+  export *
+  module * { export * }
+}

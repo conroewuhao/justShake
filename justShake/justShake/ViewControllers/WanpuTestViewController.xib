@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WanpuTestViewController">
+            <connections>
+                <outlet property="BundleIDTf" destination="uTw-f6-gfC" id="7GG-Vw-uh2"/>
+                <outlet property="DictionaryTv" destination="K0I-Va-88K" id="A9v-bg-Csy"/>
+                <outlet property="openBtn" destination="ano-ZU-RlG" id="dLm-bq-5dn"/>
+                <outlet property="showList" destination="1Vi-jD-hZq" id="uLU-rZ-xSo"/>
+                <outlet property="showTable" destination="eV9-2R-hby" id="6k6-nD-jDw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vi-jD-hZq">
+                    <rect key="frame" x="154" y="164" width="60" height="30"/>
+                    <state key="normal" title="列表原生"/>
+                    <connections>
+                        <action selector="pressShowList:" destination="-1" eventType="touchUpInside" id="h8A-uk-6bu"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTw-f6-gfC">
+                    <rect key="frame" x="94" y="243" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Tld-G0-ehK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K0I-Va-88K">
+                    <rect key="frame" x="79" y="332" width="438" height="254"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-2R-hby">
+                    <rect key="frame" x="276" y="164" width="95" height="30"/>
+                    <state key="normal" title="列表table展示"/>
+                    <connections>
+                        <action selector="pressShowTable:" destination="-1" eventType="touchUpInside" id="byw-Rh-AMs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ano-ZU-RlG">
+                    <rect key="frame" x="341" y="242" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="打开"/>
+                    <connections>
+                        <action selector="pressOpenBtn:" destination="-1" eventType="touchUpInside" id="aVX-Ab-1YR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uTw-f6-gfC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="94" id="4w6-T0-Lsp"/>
+                <constraint firstItem="ano-ZU-RlG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" constant="17" id="HaS-hb-9mb"/>
+                <constraint firstItem="1Vi-jD-hZq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-116" id="HiI-6n-cq5"/>
+                <constraint firstItem="K0I-Va-88K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="79" id="P5A-KU-vZS"/>
+                <constraint firstItem="1Vi-jD-hZq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.4" constant="59" id="YKx-J3-V6A"/>
+                <constraint firstItem="eV9-2R-hby" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" constant="-61" id="Yqv-zp-Aeq"/>
+                <constraint firstItem="eV9-2R-hby" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="23.5" id="akH-9b-XMD"/>
+                <constraint firstAttribute="bottom" secondItem="K0I-Va-88K" secondAttribute="bottom" constant="14" id="f42-9d-dTh"/>
+                <constraint firstItem="uTw-f6-gfC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-42" id="lDt-a7-jN5"/>
+                <constraint firstItem="K0I-Va-88K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="332" id="pbb-kI-Vuy"/>
+                <constraint firstAttribute="trailing" secondItem="K0I-Va-88K" secondAttribute="trailing" constant="83" id="qTm-KR-gRg"/>
+                <constraint firstItem="ano-ZU-RlG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="56" id="quF-k6-puq"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
